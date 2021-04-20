@@ -10,3 +10,9 @@ arrayMadness([4, 5, 6], [1, 2, 3]); // returns true since 4 ** 2 + 5 ** 2 + 6 **
 
 Get your timer out. Are you ready? Ready, get set, GO!!!
 */
+
+function arrayMadness(a, b) {
+  var resA = a.map((n) => Math.pow(n, 2)).reduce((acc, curr) => acc + curr);
+  var resB = b.map((n) => Math.pow(n, 3)).reduce((acc, curr) => acc + curr);
+  return resA > resB;
+}
