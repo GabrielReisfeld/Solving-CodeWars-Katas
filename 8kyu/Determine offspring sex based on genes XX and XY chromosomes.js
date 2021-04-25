@@ -12,4 +12,7 @@ function chromosomeCheck(sperm) {
   return sperm === "XY"
     ? "Congratulations! You're going to have a son."
     : "Congratulations! You're going to have a daughter.";
+
+  // Another Solution:
+  // return `Congratulations! You're going to have a ${sperm === 'XY' ? 'son' : 'daughter'}.`;
 }
