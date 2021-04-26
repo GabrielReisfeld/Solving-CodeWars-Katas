@@ -10,4 +10,9 @@ function differenceInAges(ages) {
   var oldest = ageInOrder[ageInOrder.length - 1];
   var difference = oldest - youngest;
   return [youngest, oldest, difference];
+
+  // Another Solution: 
+  // var min = Math.min(...ages);
+  // var max = Math.max(...ages);
+  // return [min, max, max - min];
 }
