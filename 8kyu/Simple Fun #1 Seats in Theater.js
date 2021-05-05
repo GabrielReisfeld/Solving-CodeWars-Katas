@@ -44,3 +44,7 @@ Constraints: 1 ≤ row ≤ nRows.
 
 The number of people who sit strictly behind you and in your column or to the left.
 */
+
+function seatsInTheater(nCols, nRows, col, row) {
+  return (nRows - row) * (nCols - (col - 1));
+}
