@@ -5,3 +5,7 @@ Example:
 
 get_char(65) # => 'A'
 */
+
+function getChar(c) {
+  return String.fromCharCode(c);
+}
