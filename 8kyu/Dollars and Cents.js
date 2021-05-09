@@ -13,3 +13,7 @@ Examples:
 
 Good luck! Your team knows they can count on you!
 */
+
+function formatMoney(amount) {
+  return `$${amount.toFixed(2)}`;
+}
