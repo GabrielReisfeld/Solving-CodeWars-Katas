@@ -11,3 +11,7 @@ isPalindrome("walter") ==> false
 isPalindrome(12321)    ==> true
 isPalindrome(123456)   ==> false
 */
+
+function isPalindrome(line) {
+  return line.split("").reverse().join("") === line;
+}
