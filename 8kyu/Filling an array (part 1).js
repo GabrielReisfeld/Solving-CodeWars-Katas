@@ -9,3 +9,11 @@ arr(5) // => [0,1,2,3,4]
 
 Note: The parameter is optional. So you have to give it a default value.
 */
+
+const arr = (N) => {
+  var arr = [];
+  for (let i = 0; i < N; i++) {
+    arr.push(i);
+  }
+  return arr;
+};
