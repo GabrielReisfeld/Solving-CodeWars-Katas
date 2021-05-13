@@ -17,4 +17,6 @@ Since we cannot define keywords in Javascript (well, at least I don't know how t
 function xor(a, b) {
   if (a && b) return false;
   return a || b ? true : false;
+  // Another Solution:
+  // return a != b;
 }
