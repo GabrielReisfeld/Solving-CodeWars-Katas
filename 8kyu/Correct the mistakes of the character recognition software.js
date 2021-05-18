@@ -11,3 +11,7 @@ Your task is correct the errors in the digitised text. You only have to handle t
 
 The test cases contain numbers only by mistake.
 */
+
+function correct(string) {
+  return string.replace(/0/g, "O").replace(/5/g, "S").replace(/1/g, "I");
+}
