@@ -11,3 +11,7 @@ function sayHello(name) {
   return 'Hello'
 }
 */
+
+function sayHello(name) {
+  return "Hello, " + name;
+}
