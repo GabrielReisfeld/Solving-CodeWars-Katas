@@ -7,3 +7,7 @@ Example:
 
 None of the arrays will be empty, so you don't have to worry about that!
 */
+
+function removeEveryOther(arr) {
+  return arr.filter((a, i) => i % 2 === 0);
+}
