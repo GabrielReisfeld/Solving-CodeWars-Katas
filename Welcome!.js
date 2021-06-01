@@ -54,4 +54,6 @@ function greet(language) {
     welsh: "Croeso",
   };
   return language in greetings ? greetings[language] : "Welcome";
+  // Another Solution:
+  // return greetings[language] || greetings['english'];
 }
