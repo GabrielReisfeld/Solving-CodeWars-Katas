@@ -1,3 +1,3 @@
 # Solving CodeWars Katas
 
-Solving Katas from https://www.codewars.com/
+Solving Katas in JavaScript from https://www.codewars.com/
