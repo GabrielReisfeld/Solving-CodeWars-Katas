@@ -1,0 +1,1 @@
+# Solving-CodeWars-Katas
