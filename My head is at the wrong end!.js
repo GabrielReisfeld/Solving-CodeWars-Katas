@@ -7,3 +7,7 @@ Same goes for all the other arrays/lists that you will get in the tests: you hav
 
 Simples!
 */
+
+function fixTheMeerkat(arr) {
+  return arr.reverse();
+}
