@@ -14,3 +14,7 @@ A few cases:
 (15, -5, 3)   ->  true
 
 */
+
+function isDivideBy(number, a, b) {
+  return (number / a) % 1 === 0 && (number / b) % 1 === 0 ? true : false;
+}
