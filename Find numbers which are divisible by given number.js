@@ -9,4 +9,6 @@ function divisibleBy(numbers, divisor) {
   var res = [];
   numbers.map((x) => (x % divisor === 0 ? res.push(x) : x));
   return res;
+  // Another Solution:
+  // return numbers.filter(n => n % divisor === 0);
 }
