@@ -21,4 +21,5 @@ function accum(s) {
     result.push(str);
   }
   return result.join("-");
+  //return s.split('').map((char, i) => (char.toUpperCase() + char.toLowerCase().repeat(i))).join('-');
 }
