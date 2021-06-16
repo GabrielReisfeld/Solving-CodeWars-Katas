@@ -8,3 +8,11 @@ For example:
 monkeyCount(10) // --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 monkeyCount(1) // --> [1]
 */
+
+function monkeyCount(n) {
+  var res = [];
+  for (let i = 1; i <= n; i++) {
+    res.push(i);
+  }
+  return res;
+}
