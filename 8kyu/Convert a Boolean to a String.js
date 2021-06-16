@@ -3,3 +3,8 @@ Implement a function which convert the given boolean value into its string repre
 
 Note: Only valid inputs will be given.
 */
+
+function booleanToString(b) {
+  return b.toString();
+  // return b ? 'true' : 'false';
+}
