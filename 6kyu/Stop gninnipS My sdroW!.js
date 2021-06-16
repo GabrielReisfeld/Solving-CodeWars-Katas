@@ -10,3 +10,19 @@ spinWords("Hey fellow warriors") => "Hey wollef sroirraw"
 spinWords("This is a test") => "This is a test" 
 spinWords("This is another test") => "This is rehtona test"
 */
+
+function spinWords(string){
+    var array = string.split(' ');
+    var res = [];
+    for (let i = 0; i < array.length; i++) {
+      if (array[i].length > 4) {
+        res.push(array[i].split('').reverse().join(''))
+      } else {
+        res.push(array[i]);
+      }
+    }
+    return res.join(' ');
+    // return words.split(' ').map(function (word) {
+    //     return (word.length > 4) ? word.split('').reverse().join('') : word;
+    //   }).join(' ');
+  }
