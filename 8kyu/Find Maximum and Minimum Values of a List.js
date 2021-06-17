@@ -12,3 +12,11 @@ min([42, 54, 65, 87, 0]) returns 0
 
     You may consider that there will not be any empty arrays/vectors.
 */
+
+var min = function (list) {
+  return Math.min(...list);
+};
+
+var max = function (list) {
+  return Math.max(...list);
+};
