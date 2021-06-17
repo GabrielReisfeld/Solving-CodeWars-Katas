@@ -11,3 +11,20 @@ DNAStrand ("ATTGC") // return "TAACG"
 
 DNAStrand ("GTAT") // return "CATA" 
 */
+function DNAStrand(dna) {
+  var res = [];
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "A") {
+      res.push("T");
+    } else if (dna[i] === "T") {
+      res.push("A");
+    } else if (dna[i] === "G") {
+      res.push("C");
+    } else {
+      res.push("G");
+    }
+  }
+  return res.join("");
+  // var pairs = {A:'T',T:'A',C:'G',G:'C'};
+  // return dna.replace(/./g, a => pairs[a]);
+}
