@@ -15,3 +15,17 @@ Notes:
     0 <= x <= 4
     0 <= y <= 4
 */
+
+function points(games) {
+  var res = 0;
+  games.map((game) => {
+    if (game[0] === game[2]) {
+      res += 1;
+    } else if (game[0] > game[2]) {
+      res += 3;
+    } else {
+      res += 0;
+    }
+  });
+  return res;
+}
