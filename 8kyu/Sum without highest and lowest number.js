@@ -13,3 +13,9 @@ Note:In C++ instead null an empty vector is used. In C there is no null. ;-)
 
 -- There's no null in Haskell, therefore Maybe [Int] is used. Nothing represents null.
 */
+
+function sumArray(array) {
+  if (!array) return 0;
+  var res = array.sort((a, b) => a - b);
+  return res.slice(1, -1).reduce((acc, curr) => acc + curr, 0);
+}
