@@ -10,4 +10,7 @@ Note! The input is a Real number (actual type is language dependent) and is >= 0
 
 function cockroachSpeed(s) {
   return Math.floor(s * 27.7778);
+  //   const secsInHour = 3600;
+  //   const centimetersInKilometers = 100000;
+  //   return Math.floor((s*centimetersInKilometers)/secsInHour);
 }
