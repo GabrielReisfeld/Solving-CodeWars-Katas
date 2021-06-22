@@ -13,3 +13,15 @@ Define String.prototype.toAlternatingCase (or a similar function/method such as 
 
 As usual, your function/method should be pure, i.e. it should not mutate the original string.
 */
+
+String.prototype.toAlternatingCase = function () {
+  var str = "";
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] === this[i].toLowerCase()) {
+      str += this[i].toUpperCase();
+    } else {
+      str += this[i].toLowerCase();
+    }
+  }
+  return str;
+};
