@@ -11,3 +11,17 @@ GetSum(1, 1) == 1   // 1 Since both are same
 GetSum(-1, 0) == -1 // -1 + 0 = -1
 GetSum(-1, 2) == 2  // -1 + 0 + 1 + 2 = 2
 */
+
+function getSum(a, b) {
+  var res = 0;
+  if (a < b) {
+    for (let i = a; i <= b; i++) {
+      res += i;
+    }
+  } else {
+    for (let i = a; i >= b; i--) {
+      res += i;
+    }
+  }
+  return res;
+}
