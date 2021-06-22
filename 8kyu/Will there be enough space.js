@@ -23,4 +23,8 @@ function enough(cap, on, wait) {
   } else {
     return Math.abs(cap - on - wait);
   }
+  // Another Solution:
+  // return (on+wait > cap) ? on+wait-cap : 0;
+  // Another Solution:
+  // return Math.max(wait + on - cap, 0);
 }
