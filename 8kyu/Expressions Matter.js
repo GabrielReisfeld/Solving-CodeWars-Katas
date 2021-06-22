@@ -46,4 +46,7 @@ After placing signs and brackets, the Maximum value obtained from the expression
 
 function expressionMatter(a, b, c) {
   return Math.max(a + b + c, a * (b + c), a * b * c, a + b * c, (a + b) * c);
+  // Another Solution:
+  //var array = [a + b + c, a * (b + c), a * b * c, a + b * c, (a + b) * c]
+  //return array.sort((aa, bb) => bb - aa)[0];
 }
