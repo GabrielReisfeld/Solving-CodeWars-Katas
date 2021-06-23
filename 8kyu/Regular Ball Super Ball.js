@@ -13,3 +13,9 @@ ball2.ballType     //=> "super"
 var Ball = function (ballType = "regular") {
   this.ballType = ballType;
 };
+// Another Solution:
+// class Ball {
+//   constructor(ballType = "regular") {
+//     this.ballType = ballType;
+//   }
+// }
