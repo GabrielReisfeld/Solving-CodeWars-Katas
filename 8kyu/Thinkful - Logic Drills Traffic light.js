@@ -5,3 +5,7 @@ Complete the function that takes a string as an argument representing the curren
 
 For example, update_light('green') should return 'yellow'.
 */
+
+function updateLight(current) {
+    return current === 'green' ? 'yellow' : current === 'yellow' ? 'red' : 'green';
+   }
