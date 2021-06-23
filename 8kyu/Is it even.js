@@ -9,3 +9,7 @@ Numbers may be positive or negative, integers or floats.
 
 Floats are considered UNeven for this kata.
 */
+
+function testEven(n) {
+  return !(n % 2);
+}
