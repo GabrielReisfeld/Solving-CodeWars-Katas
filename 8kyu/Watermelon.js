@@ -19,3 +19,8 @@ divide(4) === true  // 4 = 2 + 2
 divide(5) === false // 5 = 2 + 3
 divide(6) === true  // 6 = 2 + 4
 */
+
+function divide(weight){
+    if (weight < 4) return false
+    return weight % 2 === 0;
+  }
