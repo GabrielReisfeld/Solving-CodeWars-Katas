@@ -14,3 +14,11 @@ Note
     the range does not HAVE to include max (depending on the step)
 
 */
+
+function generateRange(min, max, step) {
+  var res = [];
+  for (let i = min; i <= max; i += step) {
+    res.push(i);
+  }
+  return res;
+}
