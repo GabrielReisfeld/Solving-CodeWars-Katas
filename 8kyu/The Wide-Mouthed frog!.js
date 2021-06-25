@@ -10,4 +10,6 @@ Your goal in this kata is to create complete the mouth_size method this method t
 
 function mouthSize(animal) {
   return animal.toLowerCase() === "alligator" ? "small" : "wide";
+  // Another Solution:
+  // return animal.match(/alligator/i) ? 'small' : 'wide';
 }
