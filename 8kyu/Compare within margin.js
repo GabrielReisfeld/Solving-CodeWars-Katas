@@ -15,3 +15,7 @@ Assume: margin >= 0
 
 Tip: Some languages have a way to make arguments optional.
 */
+
+function closeCompare(a, b, margin = 0) {
+  return Math.abs(a - b) <= margin ? 0 : a > b ? 1 : -1;
+}
