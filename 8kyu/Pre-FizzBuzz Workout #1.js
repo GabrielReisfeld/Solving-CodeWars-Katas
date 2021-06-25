@@ -14,4 +14,6 @@ function preFizz(n) {
     res.push(i);
   }
   return res;
+  // Another Solution:
+  // return Array.from({length: n}, (_, i) => i + 1);
 }
