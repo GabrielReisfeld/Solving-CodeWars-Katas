@@ -12,3 +12,17 @@ checkExam(["a", "a", "c", "b"], ["a", "a", "b",  ""]) → 7
 checkExam(["a", "a", "b", "c"], ["a", "a", "b", "c"]) → 16
 checkExam(["b", "c", "b", "a"], ["",  "a", "a", "c"]) → 0
 */
+
+function checkExam(array1, array2) {
+  var points = 0;
+  array2.map((a, b) => {
+    if (a === "") {
+      points += 0;
+    } else if (a === array1[b]) {
+      points += 4;
+    } else {
+      points += -1;
+    }
+  });
+  return points > 0 ? points : 0;
+}
