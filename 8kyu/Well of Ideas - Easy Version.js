@@ -15,4 +15,8 @@ function well(x) {
     }
   }
   return good > 2 ? "I smell a series!" : good === 0 ? "Fail!" : "Publish!";
+
+  // Another Solution:
+  // var good = x.filter(x => x === 'good').length;
+  // return good > 2 ? "I smell a series!" : good === 0 ? "Fail!" : "Publish!";
 }
