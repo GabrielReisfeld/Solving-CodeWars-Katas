@@ -12,3 +12,8 @@ Get rid of them. Only the ending ones.
 
 Zero alone is fine, don't worry about it. Poor guy anyway
 */
+
+function noBoringZeros(n) {
+  var res = String(n);
+  return Number(res.replace(/0+$/, ""));
+}
