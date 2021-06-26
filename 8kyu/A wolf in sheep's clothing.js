@@ -17,3 +17,13 @@ Output: "Oi! Sheep number 1! You are about to be eaten by a wolf!"
 Input: ["sheep", "sheep", "wolf"]
 Output: "Pls go away and stop eating my sheep"
 */
+
+function warnTheSheep(queue) {
+    if (queue[queue.length - 1] === 'wolf') return "Pls go away and stop eating my sheep";
+    queue.reverse()
+    for (let i = 0; i < queue.length; i++) {
+      if (queue[i] === 'wolf') {
+        return `Oi! Sheep number ${i}! You are about to be eaten by a wolf!`
+      }
+    }
+  }
