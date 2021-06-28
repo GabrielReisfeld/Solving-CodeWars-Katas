@@ -22,4 +22,6 @@ In the end, click "Submit" to submit your code pass this kata.
 
 function saleHotdogs(n) {
   return n < 5 ? n * 100 : n >= 10 ? n * 90 : n * 95;
+  // Another Solution:
+  // return n * (n < 5 ? 100 : n < 10 ? 95 : 90);
 }
