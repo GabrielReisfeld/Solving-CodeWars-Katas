@@ -7,3 +7,8 @@ Write a simple regex to validate a username. Allowed characters are:
 
 Length should be between 4 and 16 characters (both included).
 */
+
+function validateUsr(username) {
+  res = /^([a-z]|\d|_){4,16}$/.test(username);
+  return res;
+}
