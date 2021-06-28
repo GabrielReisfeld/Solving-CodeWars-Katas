@@ -9,3 +9,7 @@ replace("!Hi! Hi!") === "!H!! H!!"
 replace("aeiou") === "!!!!!"
 replace("ABCDE") === "!BCD!"
 */
+
+function replace(s) {
+  return s.replace(/[aeiou]/gi, "!");
+}
