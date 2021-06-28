@@ -4,4 +4,6 @@ Create a combat function that takes the player's current health and the amount o
 
 function combat(health, damage) {
   return health - damage < 0 ? 0 : health - damage;
+  // Another Solution:
+  // return Math.max(health - damage, 0);
 }
