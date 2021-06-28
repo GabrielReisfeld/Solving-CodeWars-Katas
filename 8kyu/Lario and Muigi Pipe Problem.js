@@ -13,3 +13,11 @@ Input: 1,3,5,6,7,8
 
 Output: 1,2,3,4,5,6,7,8
 */
+
+function pipeFix(numbers) {
+  var res = [];
+  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+    res.push(i);
+  }
+  return res;
+}
