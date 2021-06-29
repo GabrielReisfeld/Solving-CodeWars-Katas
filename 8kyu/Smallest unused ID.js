@@ -15,4 +15,8 @@ function nextId(ids) {
   for (let i = 0; i <= ids.length; i++) {
     if (!set.has(i)) return i;
   }
+  //   Another Solution:
+  //   var i = 0;
+  //   while (ids.includes(i)) i++;
+  //   return i;
 }
