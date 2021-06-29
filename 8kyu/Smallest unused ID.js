@@ -9,3 +9,10 @@ Note: The given array of used IDs may be unsorted. For test reasons there may be
 
 Go on and code some pure awesomeness!
 */
+
+function nextId(ids) {
+  var set = new Set(ids);
+  for (let i = 0; i <= ids.length; i++) {
+    if (!set.has(i)) return i;
+  }
+}
