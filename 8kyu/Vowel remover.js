@@ -7,3 +7,7 @@ shortcut("goodbye")  // --> gdby
 
 Don't worry about uppercase vowels.
 */
+
+function shortcut(string) {
+  return string.replace(/[aeiou]/g, "");
+}
