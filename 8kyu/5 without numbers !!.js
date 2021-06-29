@@ -5,3 +5,7 @@ Sounds easy right? Just bear in mind that you can't use any of the following cha
 
 Good luck :)
 */
+
+function unusualFive() {
+  return "Five!".length;
+}
