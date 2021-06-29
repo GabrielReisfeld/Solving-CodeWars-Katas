@@ -9,3 +9,7 @@ Example (Input --> Output)
 
 If the argument passed through is single digit or is already the maximum possible integer, your function should simply return it.
 */
+
+function superSize(num){
+    return Number(num.toString().split('').sort((a, b) => b - a).join(''));
+  }
