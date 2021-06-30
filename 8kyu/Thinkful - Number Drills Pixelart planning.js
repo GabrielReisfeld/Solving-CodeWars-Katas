@@ -16,3 +16,7 @@ False
 >>> equals_three(3)
 True
 */
+
+function isDivisible(wallLength, pixelSize) {
+  return (wallLength / pixelSize) % 1 === 0;
+}
