@@ -7,4 +7,6 @@ function array(arr) {
   res.pop();
   res.shift();
   return res.length === 0 ? null : res.join(" ");
+  // Another Solution:
+  // return arr.split(",").slice(1,-1).join(" ") || null;
 }
