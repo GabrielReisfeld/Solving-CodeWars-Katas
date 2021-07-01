@@ -12,4 +12,6 @@ longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 
 function longest(s1, s2) {
   return Array.from(new Set(s1.concat(s2).split("").sort())).join("");
+  // Another Solution:
+  // [...new Set(s1+s2)].sort().join('');
 }
