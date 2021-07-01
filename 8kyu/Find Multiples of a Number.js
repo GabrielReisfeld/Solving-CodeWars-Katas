@@ -5,3 +5,11 @@ For example, if the parameters passed are (2, 6), the function should return [2,
 
 If you can, try writing it in only one line of code.
 */
+
+function findMultiples(integer, limit) {
+  var res = [];
+  for (let i = integer; i <= limit; i += integer) {
+    res.push(i);
+  }
+  return res;
+}
