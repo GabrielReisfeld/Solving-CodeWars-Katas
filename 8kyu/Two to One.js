@@ -9,3 +9,7 @@ longest(a, b) -> "abcdefklmopqwxy"
 a = "abcdefghijklmnopqrstuvwxyz"
 longest(a, a) -> "abcdefghijklmnopqrstuvwxyz"
 */
+
+function longest(s1, s2) {
+  return Array.from(new Set(s1.concat(s2).split("").sort())).join("");
+}
