@@ -20,3 +20,7 @@ mergeArrays(arr5, arr6);  // [1, 2, 3, 4, 5, 7, 9, 10, 11, 12]
 
 Happy coding!
 */
+
+function mergeArrays(arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2).sort((a, b) => a - b)));
+}
