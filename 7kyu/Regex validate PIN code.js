@@ -8,3 +8,7 @@ Examples
 "12345"  -->  false
 "a234"   -->  false
 */
+
+function validatePIN(pin) {
+  return /^(\d{4}|\d{6})$/g.test(pin);
+}
