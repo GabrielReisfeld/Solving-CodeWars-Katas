@@ -16,3 +16,7 @@ error_printer(s) => "0/14"
 s="aaaxbbbbyyhwawiwjjjwwm"
 error_printer(s) => "8/22"
 */
+
+function printerError(s) {
+  return `${s.replace(/[a-m]/gi, "").length}/${s.length}`;
+}
