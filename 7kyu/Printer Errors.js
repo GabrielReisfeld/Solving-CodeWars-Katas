@@ -19,4 +19,13 @@ error_printer(s) => "8/22"
 
 function printerError(s) {
   return `${s.replace(/[a-m]/gi, "").length}/${s.length}`;
+
+  //   Another Solution:
+  //   var count = 0;
+  //   for(var i = 0; i < s.length; i++) {
+  //     if (s[i] > "m") {
+  //       count++;
+  //     }
+  //   }
+  //   return count + "/" + s.length;
 }
