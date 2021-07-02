@@ -21,4 +21,7 @@ Your function should return the 20 year estimate of the stairs climbed using the
 function stairsIn20(s){
     var res = s.map(a => a.reduce((acc, curr) => acc + curr)).reduce((acc, curr) => acc + curr);
     return res * 20;
+
+    // Another Solution:
+    // return 20 * a.reduce((acc, curr) => acc + curr.reduce((acc, curr) => acc + curr, 0), 0);
   }
