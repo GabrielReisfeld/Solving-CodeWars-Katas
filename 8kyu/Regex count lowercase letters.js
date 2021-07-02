@@ -17,4 +17,7 @@ lowercaseCount("abcdefghijklmnopqrstuvwxyz"); ===> 26
 
 function lowercaseCount(str) {
   return (str.match(/[a-z]/g) || []).length;
+
+  // Another Solution:
+  // return str.replace(/[^a-z]/g, "").length;
 }
