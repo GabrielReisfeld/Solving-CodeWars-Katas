@@ -17,3 +17,12 @@ The rating is case insensitive (so "great" = "GREAT"). If an unrecognised rating
 
 Because you're a nice person, you always round up the tip, regardless of the service.
 */
+
+function calculateTip(amount, rating) {
+  if (rating.toLowerCase() === "excellent") return Math.ceil(amount * 0.2);
+  if (rating.toLowerCase() === "great") return Math.ceil(amount * 0.15);
+  if (rating.toLowerCase() === "good") return Math.ceil(amount * 0.1);
+  if (rating.toLowerCase() === "poor") return Math.ceil(amount * 0.05);
+  if (rating.toLowerCase() === "terrible") return 0;
+  return "Rating not recognised";
+}
