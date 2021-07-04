@@ -12,3 +12,10 @@ You've decided to write a function, guessBlue() to help automatically calculate 
 
 guessBlue() should return the probability of drawing a blue marble, expressed as a float. For example, guessBlue(5, 5, 2, 3) should return 0.6.
 */
+
+function guessBlue(blueStart, redStart, bluePulled, redPulled) {
+  var blueLeft = blueStart - bluePulled;
+  var redLeft = redStart - redPulled;
+  var total = blueLeft + redLeft;
+  return blueLeft / total;
+}
