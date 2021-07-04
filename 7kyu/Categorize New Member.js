@@ -20,5 +20,8 @@ Example Output
 */
 
 function openOrSenior(data){
-    return data.map(member => member[0] >= 55 && member[1] > 7 ? 'Senior' : 'Open')
+    return data.map(member => member[0] >= 55 && member[1] > 7 ? 'Senior' : 'Open');
+
+    // Another Solution:
+    // return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
   }
