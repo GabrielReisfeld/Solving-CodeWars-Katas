@@ -24,3 +24,8 @@ and return a string like this:
 function animal(obj) {
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
+
+// Another Solution:
+// function animal({name, legs, color}) {
+//     return `This ${color} ${name} has ${legs} legs.`;
+//   }
