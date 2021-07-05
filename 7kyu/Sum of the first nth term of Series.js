@@ -21,3 +21,12 @@ SeriesSum(5) => 1 + 1/4 + 1/7 + 1/10 + 1/13 = "1.57"
 
 NOTE: In PHP the function is called series_sum().
 */
+
+function SeriesSum(n) {
+  if (0 === n) return "0.00";
+  var res = 1;
+  for (let i = 1; i < n; i++) {
+    res += 1 / (1 + 3 * i);
+  }
+  return `${res.toFixed(2)}`;
+}
