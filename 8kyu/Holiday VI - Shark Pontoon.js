@@ -21,3 +21,8 @@ You are given 5 variables;
 
 If you make it, return "Alive!", if not, return "Shark Bait!".
 */
+
+function shark(pontoonDistance, sharkDistance, youSpeed, sharkSpeed, dolphin){
+    var sharkSpeedDolphin = dolphin ? sharkSpeed / 2 : sharkSpeed;
+    return pontoonDistance / youSpeed < sharkDistance / sharkSpeedDolphin ? 'Alive!' : 'Shark Bait!';
+  }
