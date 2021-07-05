@@ -13,3 +13,9 @@ Please keep in mind that the test cases ensure that the number of people in the 
 
 The second value in the first integer array is 0, since the bus is empty in the first bus stop.
 */
+
+var number = function (busStops) {
+  var people = 0;
+  busStops.map((p) => (people += p[0] - p[1]));
+  return people;
+};
