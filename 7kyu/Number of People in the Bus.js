@@ -18,4 +18,7 @@ var number = function (busStops) {
   var people = 0;
   busStops.map((p) => (people += p[0] - p[1]));
   return people;
+  
+  // Another Solution:
+  // return busStops.reduce((people, [on, off]) => people + on - off, 0);
 };
