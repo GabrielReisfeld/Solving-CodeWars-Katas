@@ -9,3 +9,11 @@ Provide output in this format: For dates in the future: "You are ... year(s) old
 
 Good Luck!
 */
+
+function calculateAge(yearBirth, yearCount) {
+    if (yearCount - yearBirth === 1) return `You are 1 year old.`;
+    if (yearCount > yearBirth) return `You are ${yearCount - yearBirth} years old.`;
+    if (yearBirth - yearCount === 1) return `You will be born in 1 year.`;
+    if (yearCount < yearBirth) return `You will be born in ${yearBirth - yearCount} years.`;
+    return 'You were born this very year!';
+  }
