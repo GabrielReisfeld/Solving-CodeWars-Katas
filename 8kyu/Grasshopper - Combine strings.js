@@ -15,3 +15,6 @@ returns:
 function combineNames(firstName, lastName) {
   return `${firstName} ${lastName}`;
 }
+
+// Another Solution:
+// const combineNames = (...names) => names.join(' ');
