@@ -10,3 +10,11 @@ Some cases:
 [-56,-85,72,-26,-14,76,-27,72,35,-21,-67,87,0,21,59,27,-92,68] => [-85, 72, 0, 68]
 
 */
+
+function multipleOfIndex(array) {
+  var res = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % i === 0) res.push(array[i]);
+  }
+  return res;
+}
