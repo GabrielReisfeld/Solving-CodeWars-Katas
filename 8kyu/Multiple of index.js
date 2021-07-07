@@ -17,4 +17,7 @@ function multipleOfIndex(array) {
     if (array[i] % i === 0) res.push(array[i]);
   }
   return res;
+
+  // Another Solution:
+  // return array.filter((num, i) => num % i === 0);
 }
