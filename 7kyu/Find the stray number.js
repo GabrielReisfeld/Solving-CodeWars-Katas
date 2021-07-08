@@ -10,3 +10,7 @@ Examples
 [17, 17, 3, 17, 17, 17, 17] ==> 3
 
 */
+
+function stray(numbers) {
+  return numbers.reduce((a, b) => a ^ b);
+}
