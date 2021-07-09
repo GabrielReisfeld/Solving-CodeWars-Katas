@@ -13,3 +13,13 @@ Sum: (10 - 2) + (2 - 1) = 8 + 1 = 9
 
 If the array is empty or the array has only one element the result should be 0 (Nothing in Haskell).
 */
+
+function sumOfDifferences(arr) {
+  return [...arr]
+    .sort((a, b) => b - a)
+    .reduce(
+      (total, number, index, array) =>
+        index + 1 < array.length ? total + number - array[index + 1] : total,
+      0
+    );
+}
