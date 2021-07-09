@@ -22,4 +22,7 @@ function sumOfDifferences(arr) {
         index + 1 < array.length ? total + number - array[index + 1] : total,
       0
     );
+
+  // Another Solution:
+  // return arr.length > 1 ? Math.max(...arr) - Math.min(...arr) : 0;
 }
