@@ -12,4 +12,7 @@ Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". 
 
 function shortenToDate(longDate) {
   return longDate.split(",")[0];
+
+  // Another Solution:
+  // return longDate.slice(0, longDate.indexOf(","));
 }
