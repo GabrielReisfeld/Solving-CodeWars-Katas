@@ -3,3 +3,7 @@ Basic regex tasks. Write a function that takes in a numeric code of any length. 
 
 You can assume the input will always be a number.
 */
+
+function validateCode(code) {
+  return !!code.toString().match(/^[123]/);
+}
