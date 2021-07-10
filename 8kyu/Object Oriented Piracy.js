@@ -29,3 +29,14 @@ to decide if the ship is worthy to loot. For example:
 
 titanic.isWorthIt() // return false
 */
+
+class Ship {
+  constructor(draft, crew) {
+    this.draft = draft;
+    this.crew = crew;
+  }
+
+  isWorthIt() {
+    return this.draft - this.crew * 1.5 > 20;
+  }
+}
