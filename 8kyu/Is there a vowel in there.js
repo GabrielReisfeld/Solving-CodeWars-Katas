@@ -12,4 +12,7 @@ function isVow(a) {
       ? String.fromCharCode(charCode)
       : charCode
   );
+
+  // Another Solution:
+  // return a.map(x=>'aeiou'.includes(y=String.fromCharCode(x)) ? y : x);
 }
