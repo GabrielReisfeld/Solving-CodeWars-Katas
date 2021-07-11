@@ -14,3 +14,7 @@ Notes:
 All inputs will be either be an integer or float.
 Follow your dreams!
 */
+
+function pointsPer48(ppg, mpg) {
+  return ppg === 0 || mpg === 0 ? 0 : Number(((48 * ppg) / mpg).toFixed(1));
+}
