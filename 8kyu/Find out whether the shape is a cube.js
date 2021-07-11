@@ -16,4 +16,7 @@ Note: the sides must be integers
 
 var cubeChecker = function (volume, side) {
   return volume > 0 ? volume === side ** 3 : false;
+
+  // Another Solution:
+  // return Math.pow(side, 3) === volume && side > 0;
 };
