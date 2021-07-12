@@ -22,4 +22,7 @@ Examples
 
 function integrate(coefficient, exponent) {
   return `${coefficient / (exponent + 1)}x^${exponent + 1}`;
+
+  // Another Solution:
+  // return (coefficient / (++exponent)) + 'x^' + exponent;
 }
