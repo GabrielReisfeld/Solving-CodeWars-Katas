@@ -24,4 +24,7 @@ Coding in function trueOrFalse, function accept 1 parameters:val, try to use the
 function trueOrFalse(val) {
   if (val) return "true";
   else return "false";
+
+  // Another Solution:
+  // return Boolean(val).toString();
 }
