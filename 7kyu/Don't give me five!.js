@@ -17,3 +17,13 @@ Have fun coding it and please don't forget to vote and rank this kata! :-)
 
 I have also created other katas. Take a look if you enjoyed this kata!
 */
+
+function dontGiveMeFive(start, end) {
+  let count = 0;
+  for (let i = start; i <= end; i++) {
+    if (!/5/.test(i)) {
+      count++;
+    }
+  }
+  return count;
+}
