@@ -15,4 +15,7 @@ Assume that [a,b,c,d] and the answer are all integers (no floating numbers!). Sl
 function slope([x1, y1, x2, y2]) {
   const result = (y2 - y1) / (x2 - x1);
   return isFinite(result) ? `${result}` : "undefined";
+
+  // Another Solution:
+  // const slope = points => points[2] == points[0] ? "undefined" : (points[3] - points[1]) / (points[2] - points[0]) + "";
 }
