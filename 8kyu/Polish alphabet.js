@@ -20,3 +20,18 @@ For example:
 "Jędrzej Błądziński"  -->  "Jedrzej Bladzinski"
 
 */
+
+function correctPolishLetters(string) {
+  var letters = {
+    ą: "a",
+    ć: "c",
+    ę: "e",
+    ł: "l",
+    ń: "n",
+    ó: "o",
+    ś: "s",
+    ź: "z",
+    ż: "z",
+  };
+  return string.replace(/[ąćęłńóśźż]/g, (match) => letters[match]);
+}
