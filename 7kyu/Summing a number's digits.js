@@ -7,3 +7,7 @@ Write a function named sumDigits which takes a number as input and returns the s
 
 Let's assume that all numbers in the input will be integer values.
 */
+
+function sumDigits(number) {
+    return Math.abs(number).toString().split('').map(Number).reduce((acc, curr) => acc + curr);
+  }
