@@ -12,3 +12,12 @@ isOpposite("aBcd","AbCD") should return true;
 isOpposite("AB","Ab") should return false;
 isOpposite("","") should return false;
 */
+
+function isOpposite(s1,s2){
+    let str = '';
+    if (s1.length !== s2.length || s1.length === 0 || s2.length === 0) return false;
+    for (let i = 0; i < s1.length; i++) {
+      s1[i] === s1[i].toUpperCase() ? str += s1[i].toLowerCase() : str += s1[i].toUpperCase(); 
+    }
+    return str === s2;
+  }
