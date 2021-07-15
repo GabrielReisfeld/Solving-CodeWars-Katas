@@ -7,3 +7,8 @@ For example:
 
 twoOldestAges( [1, 2, 10, 8] ) // should return [8, 10]
 */
+
+function twoOldestAges(ages) {
+  var agesInOrder = ages.sort((a, b) => b - a);
+  return [agesInOrder[1], agesInOrder[0]];
+}
