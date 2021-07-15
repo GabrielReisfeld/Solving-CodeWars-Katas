@@ -16,3 +16,13 @@ Bash note:
     output: number as a string
 
 */
+
+function mxdiflg(a1, a2) {
+  if (a1.length === 0 || a2.length === 0) return -1;
+  let b1 = a1.map((str) => str.length);
+  let b2 = a2.map((str) => str.length);
+  return Math.max(
+    Math.max(...b1) - Math.min(...b2),
+    Math.max(...b2) - Math.min(...b1)
+  );
+}
