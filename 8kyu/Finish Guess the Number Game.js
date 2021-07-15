@@ -7,3 +7,19 @@ Imagine you are creating a game where the user has to guess the correct number. 
 
 Can you finish the game so all the rules are met?
 */
+
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+
+  guess(n) {
+    if (!this.lives) throw new Error("You have no more life");
+    if (n === this.number) return true;
+    if (n !== this.number) {
+      this.lives--;
+      return false;
+    }
+  }
+}
