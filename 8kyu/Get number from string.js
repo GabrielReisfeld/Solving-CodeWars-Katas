@@ -17,4 +17,7 @@ GetNumberFromString(string s)
 
 function getNumberFromString(s) {
   return Number(s.replace(/\D/g, ""));
+
+  // Another Solution:
+  // return +s.replace(/\D/g, "");
 }
