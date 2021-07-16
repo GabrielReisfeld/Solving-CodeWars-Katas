@@ -14,3 +14,7 @@ get_number_from_string(s)
 GetNumberFromString(string s)
 
 */
+
+function getNumberFromString(s) {
+  return Number(s.replace(/\D/g, ""));
+}
