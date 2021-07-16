@@ -11,4 +11,7 @@ removeUrlAnchor('www.codewars.com?page=1')
 
 function removeUrlAnchor(url) {
   return url.replace(/#\w+/, "");
+
+  // Another Solution:
+  // return url.split('#')[0];
 }
