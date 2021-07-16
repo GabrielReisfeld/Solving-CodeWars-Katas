@@ -25,3 +25,14 @@ Explanation:
 
 maxMultiple (10,50)  ==> return (50)
 */
+
+function maxMultiple(divisor, bound) {
+  let result = 0;
+  for (let i = 0; i <= bound; i++) {
+    if (i % divisor === 0) result = i;
+  }
+  return result;
+
+  // Another Solution:
+  // return bound - (bound % divisor);
+}
