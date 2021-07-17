@@ -7,3 +7,9 @@ There are pillars near the road. The distance between the pillars is the same an
 
 Calculate the distance between the first and the last pillar in centimeters (without the width of the first and last pillar).
 */
+
+function pillars(num_pill, dist, width) {
+  return num_pill > 1
+    ? (num_pill - 1) * dist * 100 + (num_pill - 2) * width
+    : 0;
+}
