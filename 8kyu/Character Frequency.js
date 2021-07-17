@@ -9,3 +9,9 @@ Example
 
 charFreq("I like cats") // Returns {'a': 1, ' ': 2, 'c': 1, 'e': 1, 'I': 1, 'k': 1, 'l': 1, 'i': 1, 's': 1, 't': 1}
 */
+
+function charFreq(message) {
+  let counts = {};
+  [...message].forEach((x) => (counts[x] ? counts[x]++ : (counts[x] = 1)));
+  return counts;
+}
