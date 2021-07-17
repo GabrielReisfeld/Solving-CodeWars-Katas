@@ -6,3 +6,12 @@ Example
 
 Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 */
+
+var capitals = function (word) {
+  return word.split("").reduce((array, el, i) => {
+    if (el.toUpperCase() === el) {
+      array.push(i);
+    }
+    return array;
+  }, []);
+};
