@@ -57,3 +57,17 @@ You need to write a loop statement within the function that loops n times. Each 
 
 Finally, return the padded string.
 */
+
+function padIt(str, n) {
+  let result = str;
+  let i = 0;
+  while (i < n) {
+    if (i % 2 === 0) {
+      result = `*${result}`;
+    } else {
+      result = `${result}*`;
+    }
+    i += 1;
+  }
+  return result;
+}
