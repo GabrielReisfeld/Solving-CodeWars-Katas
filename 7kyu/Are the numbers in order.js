@@ -16,3 +16,7 @@ inAscOrder([9,8,7,6,5,4,3,2,1]); // returns false because the numbers are in DES
 
 N.B. If your solution passes all fixed tests but fails at the random tests, make sure you aren't mutating the input array.
 */
+
+function inAscOrder(arr) {
+  return arr.every((_, i) => i === 0 || arr[i] > arr[i - 1]);
+}
