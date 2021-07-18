@@ -13,4 +13,12 @@ function fuelPrice(litres, pricePerLitre) {
   if (litres >= 10) discount = 0.25;
   const totalPrice = litres * pricePerLitre - litres * discount;
   return Number(totalPrice.toFixed(2));
+
+  // Another Solution:
+  //   for (let i = 2; i <= 10; i +=2) {
+  //     if (litres >= i) {
+  //       pricePerLiter -= 0.05;
+  //     }
+  //   }
+  //   return Math.round(litres * pricePerLiter * 100) / 100;
 }
