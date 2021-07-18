@@ -17,3 +17,7 @@ output:
 
 Array's length > 2.
 */
+
+function toCsvText(array) {
+  return array.join("\n");
+}
