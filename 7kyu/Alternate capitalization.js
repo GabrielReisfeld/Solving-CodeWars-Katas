@@ -7,3 +7,16 @@ The input will be a lowercase string with no spaces.
 
 Good luck!
 */
+
+function capitalize(s) {
+  return [
+    s
+      .split("")
+      .map((l, i) => (i % 2 == 0 ? l.toUpperCase() : l.toLowerCase()))
+      .join(""),
+    s
+      .split("")
+      .map((l, i) => (i % 2 !== 0 ? l.toUpperCase() : l.toLowerCase()))
+      .join(""),
+  ];
+}
