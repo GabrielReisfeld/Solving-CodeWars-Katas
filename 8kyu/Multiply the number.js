@@ -7,3 +7,8 @@ multiply(200)==25000
 multiply(0)==0
 multiply(-3)==-15
 */
+
+function multiply(number) {
+  const exp = String(Math.abs(number)).length;
+  return number * 5 ** exp;
+}
