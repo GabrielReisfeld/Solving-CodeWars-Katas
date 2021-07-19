@@ -29,4 +29,7 @@ function drawStairs(n) {
     str += " ".repeat(i) + "I\n";
   }
   return str.slice(0, -1);
+
+  // Another Solution:
+  // return [...Array(n)].map((_, i) => " ".repeat(i) + "I").join("\n");
 }
