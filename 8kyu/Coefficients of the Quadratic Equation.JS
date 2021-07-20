@@ -24,3 +24,7 @@ Notes
     When x1 == x2, this means the root has the multiplicity of two
 
 */
+
+function quadratic(x1, x2) {
+  return [1, -x1 - x2, x1 * x2];
+}
