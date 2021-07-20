@@ -31,4 +31,8 @@ function minValue(values) {
   let val = Array.from(new Set(values));
   let order = val.sort((a, b) => a - b);
   return Number(order.join(""));
+
+  // Another Solution:
+  //   let val = Array.from(new Set(values));
+  //   return Number(val.sort().join(''));
 }
