@@ -14,3 +14,7 @@ Examples (Input -- => Output):
 "zyxwvutsrqponmlkjihgfedcba"  -- => "abcdefghijklmnopqrstuvwxyz"
 
 */
+
+function sortGiftCode(code) {
+  return code.split("").sort().join("");
+}
