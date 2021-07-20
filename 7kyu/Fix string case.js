@@ -12,3 +12,9 @@ solve("coDE") = "code". Upper == lowercase. Change all to lowercase.
 
 More examples in test cases. Good luck!
 */
+
+function solve(s) {
+  var upper = s.split("").filter((l) => l.match(/[A-Z]/)).length;
+  let lower = s.split("").filter((l) => l.match(/[a-z]/)).length;
+  return lower >= upper ? s.toLowerCase() : s.toUpperCase();
+}
