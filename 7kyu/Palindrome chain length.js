@@ -17,3 +17,11 @@ For example, start with 87:
 
 4884 is a palindrome and we needed 4 steps to obtain it, so answer for 87 is 4.
 */
+
+var palindromeChainLength = function (n) {
+  var x = Number(("" + n).split("").reverse().join(""));
+  if (n !== x) {
+    return 1 + palindromeChainLength(n + x);
+  }
+  return 0;
+};
