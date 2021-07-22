@@ -80,3 +80,12 @@ Return the five after works finished.
 
 You should use for..in in your code, otherwise, your solution may not pass this kata. Don't learn bad habits from those lazy guys ;-)
 */
+
+function giveMeFive(obj) {
+  let array = [];
+  for (let key in obj) {
+    if (key.length === 5) array.push(key);
+    if (obj[key].length === 5) array.push(obj[key]);
+  }
+  return array;
+}
