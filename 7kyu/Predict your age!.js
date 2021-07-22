@@ -17,3 +17,11 @@ Note: the result should be rounded down to the nearest integer.
 
 Some random tests might fail due to a bug in the JavaScript implementation. Simply resubmit if that happens to you.
 */
+
+function predictAge(age1, age2, age3, age4, age5, age6, age7, age8) {
+  let ages = [age1, age2, age3, age4, age5, age6, age7, age8];
+  let res = ages
+    .map((element) => element * element)
+    .reduce((acc, curr) => acc + curr, 0);
+  return Math.floor(Math.sqrt(res) / 2);
+}
