@@ -12,3 +12,7 @@ You are using a library (Game.Logic in C#) that already has the functions below.
 - rollDice
 - move
 */
+
+function doTurn() {
+  rollDice(), move(), combat(), getCoins(), buyHealth(), printStatus();
+}
