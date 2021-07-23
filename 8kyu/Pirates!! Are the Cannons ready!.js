@@ -21,3 +21,9 @@ Firing with less than all gunners ready is non-optimum (this is not fire at will
 
 If all answers are 'aye' then Fire! if one or more are 'nay' then Shiver me timbers!
 */
+
+const cannonsReady = (gunners) => {
+  return Object.values(gunners).every((response) => response === "aye")
+    ? "Fire!"
+    : "Shiver me timbers!";
+};
