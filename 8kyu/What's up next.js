@@ -6,3 +6,16 @@ When the item isn't present or nothing follows it, the function should return ni
 nextItem([1, 2, 3, 4, 5, 6, 7], 3) # 4
 nextItem("testing", "t") # "e"
 */
+
+function nextItem(xs, item) {
+  let found = false;
+  let finalValue;
+  for (const i of xs) {
+    if (found) {
+      finalValue = i;
+      break;
+    }
+    if (i === item) found = true;
+  }
+  return finalValue;
+}
