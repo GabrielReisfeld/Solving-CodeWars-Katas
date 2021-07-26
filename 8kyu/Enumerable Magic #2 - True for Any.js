@@ -3,3 +3,7 @@ Create an any? (JS: any) function that accepts an array and a block (JS: functio
 
 Ruby: If you get stuck, you can read up here:
 */
+
+function any(arr, fun) {
+  return arr.some(fun);
+}
