@@ -15,4 +15,8 @@ function numberToPower(number, power) {
     res *= number;
   }
   return res;
+
+  // Another Solution:
+  //   if (power === 0) return 1;
+  //   return number * numberToPower(number, power - 1);
 }
