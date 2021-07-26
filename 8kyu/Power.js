@@ -8,3 +8,11 @@ numberToPower(10,6) // -> 1000000
 
 Note: Math.pow and some other Math functions like eval() and ** are disabled.
 */
+
+function numberToPower(number, power) {
+  let res = 1;
+  for (let i = 1; i <= power; i++) {
+    res *= number;
+  }
+  return res;
+}
