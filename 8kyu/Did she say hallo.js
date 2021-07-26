@@ -19,3 +19,8 @@ PS. you can assume the input is a string. PPS. to keep this a beginner exercise 
 
 PS. regex should be case insensitive to pass the tests
 */
+
+function validateHello(greetings) {
+  var res = /(hello|ciao|salut|hallo|hola|ahoj|czesc)/i.test(greetings);
+  return res;
+}
