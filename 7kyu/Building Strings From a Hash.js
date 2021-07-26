@@ -7,3 +7,11 @@ Example:
 
 solution({a: 1, b: '2'}) // should return "a = 1,b = 2"
 */
+
+function solution(pairs) {
+  return Object.keys(pairs)
+    .map(function (value) {
+      return value + " = " + pairs[value];
+    })
+    .join(",");
+}
