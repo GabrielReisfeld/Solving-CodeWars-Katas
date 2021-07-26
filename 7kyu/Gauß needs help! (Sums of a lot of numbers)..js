@@ -13,3 +13,7 @@ It's your duty to verify that n is a valid positive integer number. If not, plea
 
     Advanced - experienced users should try to solve it in one line, without loops, or optimizing the code as much as they can.
 */
+
+function f(n) {
+  return parseInt(n) === n && n > 0 ? (n * (n + 1)) / 2 : false;
+}
