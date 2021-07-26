@@ -7,3 +7,11 @@ Complete the method which accepts an array of integers, and returns one of the f
 
 You can assume the array will always be valid, and there will always be one correct answer.
 */
+
+function isSortedAndHow(array) {
+  return array.every((x, i) => i === 0 || array[i] >= array[i - 1])
+    ? "yes, ascending"
+    : array.every((x, i) => i === 0 || array[i] <= array[i - 1])
+    ? "yes, descending"
+    : "no";
+}
