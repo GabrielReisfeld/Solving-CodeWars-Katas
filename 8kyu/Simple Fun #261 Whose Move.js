@@ -21,3 +21,10 @@ For lastPlayer = "black" and win = false, the output should be "white".
 
 For lastPlayer = "white" and win = true, the output should be "white".
 */
+
+function whoseMove(lastPlayer, win) {
+  if (lastPlayer === "white" && win) return "white";
+  if (lastPlayer === "black" && win) return "black";
+  if (lastPlayer === "white" && !win) return "black";
+  if (lastPlayer === "black" && !win) return "white";
+}
