@@ -27,4 +27,7 @@ function whoseMove(lastPlayer, win) {
   if (lastPlayer === "black" && win) return "black";
   if (lastPlayer === "white" && !win) return "black";
   if (lastPlayer === "black" && !win) return "white";
+
+  // Another solution:
+  // return win ? lastPlayer : lastPlayer === "white" ? "black" : "white";
 }
