@@ -105,3 +105,8 @@ cutIt(["ab","cde","fgh"]) should return ["ab","cd","fg"]
 cutIt(["abc","defgh","ijklmn"]) should return ["abc","def","ijk"]
 cutIt(["codewars","javascript","java"]) should return ["code","java","java"]
 */
+
+function cutIt(arr) {
+  var minLength = Math.min(...arr.map((str) => str.length));
+  return arr.map((str) => str.slice(0, minLength));
+}
