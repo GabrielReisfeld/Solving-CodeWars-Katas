@@ -12,4 +12,7 @@ function billboard(name, price = 30) {
     res += price;
   }
   return res;
+
+  // Another Solution:
+  // return name.split('').reduce((acc, curr) => acc + price, 0);
 }
