@@ -17,4 +17,7 @@ text after  = "zzz"
 
 function contamination(text, char) {
   return char.repeat(text.length);
+
+  // Another Solution:
+  // return text.replace(/./g, char);
 }
