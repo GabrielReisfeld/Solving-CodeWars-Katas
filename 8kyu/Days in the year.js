@@ -13,3 +13,9 @@ Exception: Century years are NOT leap years UNLESS they can be evenly divided by
 
 So the years 0, -64 and 2016 will return 366 days. Whilst 1974, -10 and 666 will return 365 days.
 */
+
+function yearDays(year) {
+  return `${year} has ${
+    (!(year % 100) && year % 400) || year % 4 ? "365" : "366"
+  } days`;
+}
