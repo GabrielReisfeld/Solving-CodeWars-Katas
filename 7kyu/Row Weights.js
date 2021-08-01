@@ -31,3 +31,7 @@ Explanation:
 
 The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 */
+
+function rowWeights(array) {
+  return array.reduce((acc, curr, i) => ((acc[i % 2] += curr), acc), [0, 0]);
+}
