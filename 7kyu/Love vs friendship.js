@@ -9,3 +9,7 @@ So friendship is twice stronger than love :-)
 
 The input will always be in lowercase and never be empty.
 */
+
+function wordsToMarks(string) {
+  return [...string].reduce((acc, curr) => (acc += curr.charCodeAt() - 96), 0);
+}
