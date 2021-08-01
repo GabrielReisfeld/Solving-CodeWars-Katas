@@ -15,3 +15,9 @@ Note: You will be always given non-empty array containing Positive values.
 
 ENJOY CODING :)
 */
+
+function sumOfMinimums(arr) {
+  return arr
+    .map((subArray) => Math.min(...subArray))
+    .reduce((acc, curr) => acc + curr);
+}
