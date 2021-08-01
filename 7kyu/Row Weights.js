@@ -34,4 +34,11 @@ The first element 80 is the total weight of team 1, and the second element 0 is 
 
 function rowWeights(array) {
   return array.reduce((acc, curr, i) => ((acc[i % 2] += curr), acc), [0, 0]);
+
+  // Another Solution:
+  //   let result = [0, 0];
+  //   for (let i = 0; i < array.length; i++) {
+  //     i % 2 === 0 ? result[0] += array[i] : result[1] += array[i];
+  //   }
+  //   return result;
 }
