@@ -35,3 +35,12 @@ Note
     Happy Coding ^_^
 
 */
+
+function isValid(formula) {
+  const r1 = !(formula.includes(1) && formula.includes(2));
+  const r2 = !(formula.includes(3) && formula.includes(4));
+  const r3 = formula.includes(5) === formula.includes(6);
+  const r4 = formula.includes(7) || formula.includes(8);
+
+  return r1 && r2 && r3 && r4;
+}
