@@ -74,3 +74,7 @@ firstToLast("ababc","a") should return 2(2-0)
 firstToLast("ababc","c") should return 0(4-4)
 firstToLast("ababc","d") should return -1
 */
+
+function firstToLast(str, c) {
+  return str.includes(c) ? str.lastIndexOf(c) - str.indexOf(c) : str.indexOf(c);
+}
