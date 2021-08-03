@@ -29,3 +29,8 @@ sc(10) should return "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!"
 
 if floor<=1, Mr. despair is safe, return ""
 */
+
+function sc(floor) {
+  if (floor <= 1) return "";
+  return "Aa~ ".repeat(floor - 1) + "Pa!" + (floor <= 6 ? " Aa!" : "");
+}
