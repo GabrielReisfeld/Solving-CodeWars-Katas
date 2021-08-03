@@ -24,3 +24,7 @@ class Point {
 
 Tests round answers to 6 decimal places.
 */
+
+function circleArea(circle) {
+  return circle.radius * circle.radius * Math.PI;
+}
