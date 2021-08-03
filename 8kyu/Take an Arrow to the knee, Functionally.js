@@ -10,3 +10,7 @@ These are example of how to convert a number to an ascii Character:
 Javascript => String.fromCharCode(97) // a
 C# => Tools.FromCharCode(97) // a
 */
+
+var ArrowFunc = function (arr) {
+  return arr.map((n) => String.fromCharCode(n)).join("");
+};
