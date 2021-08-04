@@ -92,3 +92,16 @@ xyxyxy
 xyxyxyxy
 xyxyxyxyxy  <---The effect when you console.log it
 */
+
+function fiveLine(s) {
+  const sTrim = s.trim();
+  let res = "";
+  for (let i = 1; i <= 5; i++) {
+    if (i === 5) {
+      res += `${sTrim.repeat(i)}`;
+      break;
+    }
+    res += `${sTrim.repeat(i)}\n`;
+  }
+  return res;
+}
