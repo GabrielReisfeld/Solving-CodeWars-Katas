@@ -6,3 +6,14 @@ Return the person object with the Name, Friends and FillFriends function filled 
 
 Reference: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
 */
+
+var Person = function () {
+  var person = {
+    _name: "Leroy",
+    _friends: [],
+    fillFriends(f) {
+      this._friends.push(...f);
+    },
+  };
+  return person;
+};
