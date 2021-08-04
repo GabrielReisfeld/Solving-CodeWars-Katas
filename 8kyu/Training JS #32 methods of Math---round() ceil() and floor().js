@@ -62,3 +62,14 @@ If the decimal point is on the middle of the number (that is, the count of digit
 
 roundIt(34.56) should return 35
 */
+
+function roundIt(n) {
+  let decimal = n.toString().split(".");
+  if (decimal[0].length > decimal[1].length) {
+    return Math.floor(n);
+  } else if (decimal[0].length < decimal[1].length) {
+    return Math.ceil(n);
+  } else {
+    return Math.round(n);
+  }
+}
