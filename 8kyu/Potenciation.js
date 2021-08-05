@@ -9,3 +9,7 @@ Note : zero to the power of zero equals one in this kata
 
 Great coding <3
 */
+
+function power(x, y) {
+  return x ** y;
+}
