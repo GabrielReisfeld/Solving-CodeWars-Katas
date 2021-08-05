@@ -15,3 +15,7 @@ Your task is to simply calculate the loudness of a sound wave, given its intensi
 
 Results are automatically rounded to the nearest integer by the test cases.
 */
+
+function dBScale(intensity) {
+  return 10 * Math.log10(intensity / Math.pow(10, -12));
+}
