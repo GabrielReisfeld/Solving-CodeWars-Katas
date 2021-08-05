@@ -18,4 +18,7 @@ Good luck!
 
 function sumSquares(array) {
   return array.map((n) => n ** 2).reduce((acc, curr) => acc + curr);
+
+  // Another Solution:
+  // return array.reduce((acc, curr) => acc + curr ** 2, 0);
 }
