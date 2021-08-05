@@ -15,3 +15,7 @@ A few hints:
 
 Good luck!
 */
+
+function sumSquares(array) {
+  return array.map((n) => n ** 2).reduce((acc, curr) => acc + curr);
+}
