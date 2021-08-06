@@ -11,3 +11,7 @@ Aspect ratio 4 3 example
 
 500 × 280 pixel image with a 16:9 aspect ratio.
 */
+
+function aspectRatio(x, y) {
+  return [Math.ceil((y * 16) / 9), y];
+}
