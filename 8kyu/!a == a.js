@@ -6,3 +6,5 @@ You task to pass only this tests :
     a == !a
 
 */
+
+const a = "0";
