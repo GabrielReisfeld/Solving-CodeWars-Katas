@@ -11,3 +11,7 @@ NOTE: NaN is a number too in javascript for decimal, binary and n-ary base
 
 This is a modification on the Kata: Array2Binary addition hope you like it
 */
+
+function arr2bin(arr){
+    return arr.reduce((acc, curr) => (typeof curr === 'number' ? acc + curr : acc), 0).toString(2);
+  }
