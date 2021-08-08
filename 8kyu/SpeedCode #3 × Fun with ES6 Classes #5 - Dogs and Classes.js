@@ -36,3 +36,9 @@ Shorten it so that it meets the strict character count requirements for this Kat
 
 Quick, get your timer out and get ready to time yourself. Are you ready? Ready, get set, GO!!! :D
 */
+
+class Labrador extends Dog {
+  constructor(name, age, gender, master) {
+    super(name, age, gender, "Labrador", "Large", master, true);
+  }
+}
