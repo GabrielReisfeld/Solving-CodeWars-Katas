@@ -10,3 +10,7 @@ Refactor the solution to use as few characters as possible. There is a maximum c
 
 Good luck! :D
 */
+
+function squaresOnly(array) {
+  return array.filter((n) => Number.isInteger(Math.sqrt(n)));
+}
