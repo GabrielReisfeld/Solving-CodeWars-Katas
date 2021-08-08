@@ -15,3 +15,14 @@ NOTES
     This is indexed from [1..n] (not zero indexed!)
 
 */
+
+function vowelIndices(word) {
+  let array = [];
+  let letter = word.split("");
+  for (let i = 0; i < word.length; i++) {
+    if (/[aeiouy]/gi.test(letter[i])) {
+      array.push(i + 1);
+    }
+  }
+  return array;
+}
