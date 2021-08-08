@@ -9,3 +9,17 @@ var joe = new Person('Joe');
 joe.greet('Kate'); // should return 'Hello Kate, my name is Joe'
 joe.name           // should == 'Joe'
 */
+
+/*function greet(myName, yourName){
+  return "Hello " + yourName + ", my name is " + myName;
+}*/
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  greet(yourName) {
+    return `Hello ${yourName}, my name is ${this.name}`;
+  }
+}
