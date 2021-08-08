@@ -20,3 +20,6 @@ Articles of Interest
 
 Unfortunately, in this Kata, any article I recommend to you would immediately give away the solution so I have decided to not recommend any articles in this Kata of the series. I apologise for any inconvenience caused.
 */
+
+let circular = { value: "Hello World" };
+circular.self = circular;
