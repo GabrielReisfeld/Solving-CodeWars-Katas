@@ -12,3 +12,11 @@ If the array has 0 or 1 values or is null, your method should return an empty ar
 
 Have fun coding it and please don't forget to vote and rank this kata! :-)
 */
+
+function averages(numbers) {
+  return numbers
+    ? numbers
+        .map((number, index, array) => (number + array[index + 1]) / 2)
+        .slice(0, -1)
+    : [];
+}
