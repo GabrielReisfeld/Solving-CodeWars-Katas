@@ -46,3 +46,13 @@ Bash Note:
 
 The input strings are separated by , instead of \n. The output strings should be separated by \r instead of \n. See "Sample Tests".
 */
+
+function vertMirror(strng) {
+  return strng.map((s) => [...s].reverse().join(""));
+}
+function horMirror(strng) {
+  return strng.reverse();
+}
+function oper(fct, s) {
+  return fct(s.split("\n")).join("\n");
+}
