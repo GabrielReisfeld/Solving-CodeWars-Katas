@@ -9,3 +9,9 @@ multiplyAll([1, 2, 3])(2) = [2, 4, 6];
 
 You must not mutate the original array.
 */
+
+function multiplyAll(array) {
+  return function (num) {
+    return array.map((n) => n * num);
+  };
+}
