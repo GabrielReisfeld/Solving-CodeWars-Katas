@@ -14,3 +14,7 @@ return [null, ["favicon.gif", "favicon", "gif"]]
 
 !Non Case Sensitive, so a file with the extension .jpg or .JPG is still an image.
 */
+
+function imageFilter(arr) {
+  return arr.map((img) => img.match(/^(.+)\.(jpg|gif|png|tiff|svg|bmp)$/i));
+}
