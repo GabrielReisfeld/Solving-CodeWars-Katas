@@ -42,3 +42,10 @@ Explanation:
 
 As 98764321 is _The Maximum number _ could be formed from the digits of the number 17693284 .
 */
+
+function maxNumber(n) {
+  return +String(n)
+    .split("")
+    .sort((a, b) => b - a)
+    .join("");
+}
