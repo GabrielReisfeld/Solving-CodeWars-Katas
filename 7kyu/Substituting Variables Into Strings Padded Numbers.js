@@ -8,4 +8,7 @@ solution(5) // should return "Value is 00005"
 
 function solution(value) {
   return "Value is " + ("00000" + value).slice(-5);
+
+  // Another Solution:
+  // return 'Value is ' + value.toString().padStart(5, '0');
 }
