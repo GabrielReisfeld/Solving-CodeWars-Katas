@@ -40,3 +40,12 @@ x starting from 9
 5th operation: increase x to 15, which is a multiple of 5.
 
 */
+
+function increasingNumber(x, n) {
+  for (let i = 1; i <= n; i++) {
+    while (x % i !== 0) {
+      x++;
+    }
+  }
+  return x;
+}
