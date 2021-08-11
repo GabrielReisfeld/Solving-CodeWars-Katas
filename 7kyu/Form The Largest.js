@@ -48,4 +48,7 @@ function maxNumber(n) {
     .split("")
     .sort((a, b) => b - a)
     .join("");
+
+  // Another Solution:
+  // return Number(String(n).split("").sort().reverse().join(""));
 }
