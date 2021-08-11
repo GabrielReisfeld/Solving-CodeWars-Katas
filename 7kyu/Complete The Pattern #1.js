@@ -45,3 +45,11 @@ Examples:
 
     Hint: Use \n in string to jump to next line
 */
+
+function pattern(n) {
+  var output = [];
+  for (let i = 1; i <= n; i++) {
+    output.push(Array(i + 1).join(i));
+  }
+  return output.join("\n");
+}
