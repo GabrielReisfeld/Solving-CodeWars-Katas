@@ -12,3 +12,5 @@ Coding Limitation:
 
 Less than 40 characters
 */
+
+array=a=>[...Array(30)].map((x,i)=>i+1)
