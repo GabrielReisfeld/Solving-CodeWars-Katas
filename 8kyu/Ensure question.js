@@ -15,4 +15,7 @@ function ensureQuestion(s) {
     array.push("?");
     return array.join("");
   }
+
+  // Another Solution:
+  // return s.endsWith('?') ? s : s+'?';
 }
