@@ -6,3 +6,13 @@ For example (Input --> Output)
 "Yes" --> "Yes?" 
 "No?" --> "No?"
 */
+
+function ensureQuestion(s) {
+  let array = s.split("");
+  if (array[array.length - 1] === "?") {
+    return array.join("");
+  } else {
+    array.push("?");
+    return array.join("");
+  }
+}
