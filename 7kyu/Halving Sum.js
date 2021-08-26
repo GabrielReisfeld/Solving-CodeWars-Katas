@@ -11,3 +11,12 @@ Example
 25  =>  25 + 12 + 6 + 3 + 1 = 47
 
 */
+
+function halvingSum(n) {
+  let res = 0;
+  while (n >= 1) {
+    res += n;
+    n = Math.floor(n / 2);
+  }
+  return res;
+}
