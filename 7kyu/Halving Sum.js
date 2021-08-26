@@ -19,4 +19,8 @@ function halvingSum(n) {
     n = Math.floor(n / 2);
   }
   return res;
+
+  // Another Solution (recursion):
+  // if (n === 1) return n;
+  // return n + halvingSum(Math.floor(n/2));
 }
